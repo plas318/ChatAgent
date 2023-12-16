@@ -1,0 +1,50 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <!--    Define data binding,     -->
+        <variable
+            name="message"
+            type="com.example.chatagent.Message" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@drawable/system_message_background"
+            android:maxWidth="240dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="System" />
+
+            <TextView
+                android:id="@+id/SystemMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginTop="3dp"
+                android:text="@{message.content}"
+                />
+
+            <TextView
+                android:id="@+id/SystemMessageTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                app:formattedDate="@{message.timestamp}"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
