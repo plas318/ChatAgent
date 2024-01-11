@@ -1,24 +1,19 @@
 # ChatAgent
-___
 ChatAgent is my first Simple Mobile App Project that utilizes openAI's API
 to send chat messages and receive messages from your app
 
-Noteable Concepts
----
-Jetpack Compose
 
-MVVM architecture 
-  Model
-  View Model
-  LiveData
-
-Recycler View 
-  Adapters
-
-Room - Database
-  Model View Factory & Repository
-
-Retrofit - API calls
+## Noteable Concepts
+- Jetpack Compose
+- MVVM architecture 
+  - Model
+- View Model
+  - LiveData
+- Recycler View 
+  - Adapters
+- Room - Database
+  - Model View Factory & Repository
+- Retrofit - API calls
 
 
 
